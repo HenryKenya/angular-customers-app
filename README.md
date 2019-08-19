@@ -1,6 +1,8 @@
 # CustomerApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+Simple project built to demonstrate fundamental angular principles: components, modules, directives and pipes, services etc.
+
+Built it while refreshing on Angular. 
 
 ## Development server
 
@@ -22,6 +24,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Personal website
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Visit my personal website [Portfolio](https://henrydru.herokuapp.com)
+
+
