@@ -45,6 +45,24 @@ export class CustomersListComponent implements OnInit {
         })
     }
 
+    // filter customers
+    filter = (data: string) => {
+        if(data) {
+            this.filteredCustomers = this.customers.filter( (cust : ICustomer) => {
+                return cust.name.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+                       cust.city.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+                       cust.orderTotal.toString().indexOf(data.toLowerCase()) > -1
+            });
+            
+           
+
+        } else {
+            this.filteredCustomers = this.customers;
+        }
+        
+        this.calculateOrders(); // call function to calculate orders again 
+    }
+
     
     sort = (prop: string) => {
         // sorter service will handle sorting
