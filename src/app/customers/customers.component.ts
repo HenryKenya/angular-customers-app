@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ICustomer } from '../shared/interfaces';
+import { DataService } from '../core/data.service';
 
 @Component({
     selector: 'app-customers',
@@ -10,7 +12,7 @@ export class CustomersComponent implements OnInit {
     title: string;
     people: ICustomer[];
 
-    constructor() {
+    constructor( private dataService: DataService ) {
 
     }
     
